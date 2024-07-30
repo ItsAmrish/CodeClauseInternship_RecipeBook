@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="home-container">
+        <h1>Welcome to Recipe App</h1>
+        <div class="home-options">
+            <button id="add-recipe-btn">Add Recipe</button>
+        </div>
+        <div class="recent-recipes">
+            <h2>Recipes</h2>
+            <div id="recent-recipes-list" class="recipe-list"></div>
+        </div>
+    </div>
+
+    <div class="container" id="recipe-container" style="display: none;">
+        <button class="back-btn" id="back-btn-1">Back</button>
+        <h1>Recipe App</h1>
+        <div class="form-container" id="recipe-form-container">
+            <form id="recipe-form">
+                <input type="hidden" id="recipe-id">
+                <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+                <textarea id="recipe-ingredients" placeholder="Ingredients" required></textarea>
+                <textarea id="recipe-steps" placeholder="Steps" required></textarea>
+                <input type="file" id="recipe-image" accept="image/*">
+                <button type="submit">Add Recipe</button>
+            </form>
+            
+        </div>
+    </div>
+    
+    <div class="container" id="recipe-detail-container" style="display: none;">
+        <button class="back-btn" id="back-btn-2">Back</button>
+        <div id="recipe-detail"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
